@@ -2,4 +2,4 @@
 
 The program also takes in mind leap years and the exception to leap years that are every 1000 years!
 
-Feel free to use this program :)
+Feel free to use this program for your own purpose! :)
