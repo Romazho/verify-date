@@ -14,7 +14,7 @@ def verifyDate():
 
     oddMonths = [1, 3, 5, 7, 8, 10, 12]  # months that have 31 days
     evenMonths = [4, 6, 9, 11]  # months that have 30 days
-    febuary = 2
+    february = 2
 
     monthIsCorrect = False
 
@@ -26,7 +26,7 @@ def verifyDate():
         elif ((month in evenMonths) and day == 31):
             print("Attention! This month can't have 31 days")
         elif ((month == 2) and day > 29):
-            print("Attention! Febuary can't have more than 29 days")
+            print("Attention! February can't have more than 29 days")
         else:
             monthIsCorrect = True
 
@@ -37,18 +37,18 @@ def verifyDate():
         year = int(input())
         if (year < 0):
             print("Attention! A year cannot be negative.")
-        elif(year % 1000 == 0 and month == febuary):
+        elif(year % 1000 == 0 and month == february):
             yearIsCorrect = True
-        elif(year % 100 == 0 and month == febuary and day > 28):
-            print("Attention! The day " + str(day) + " cannot exist on the month of Febuary on the year " +
+        elif(year % 100 == 0 and month == february and day > 28):
+            print("Attention! The day " + str(day) + " cannot exist on the month of February on the year " +
                   str(year) + ". Because a 'hundred' year isn't actually a leap year!")
-        elif(year % 4 != 0 and month == febuary and day > 28):
-            print("Attention! The day " + str(day) + " cannot exist on the month of Febuary on the year " +
+        elif(year % 4 != 0 and month == february and day > 28):
+            print("Attention! The day " + str(day) + " cannot exist on the month of February on the year " +
                   str(year) + ". Because it's not a leap year!")
         else:
             yearIsCorrect = True
 
-    print("Congragulation! You have chosen a correct date! Your date is: " +
+    print("Congratulations! You have chosen a correct date! Your date is: " +
           str(day) + "/" + str(month) + "/" + str(year))
 
 
