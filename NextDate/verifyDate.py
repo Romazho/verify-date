@@ -5,8 +5,7 @@ def verifyDate():
     dayIsCorrect = False
 
     while (not dayIsCorrect):
-        print("Please enter a day: ")
-        day = int(input())
+        day = int(input("Please enter a day: "))
         if (day < 1 or day > 31):
             print("Attention! The day must be between 1 and 31.")
         else:
@@ -19,8 +18,7 @@ def verifyDate():
     monthIsCorrect = False
 
     while (not monthIsCorrect):
-        print("Please enter a month: ")
-        month = int(input())
+        month = int(input("Please enter a month: "))
         if (month < 1 or month > 12):
             print("Attention! The month must be between 1 and 12.")
         elif ((month in evenMonths) and day == 31):
@@ -33,8 +31,7 @@ def verifyDate():
     yearIsCorrect = False
 
     while (not yearIsCorrect):
-        print("Please enter a year: ")
-        year = int(input())
+        year = int(input("Please enter a year: "))
         if (year < 0):
             print("Attention! A year cannot be negative.")
         elif(year % 1000 == 0 and month == february):
